@@ -36,7 +36,7 @@ public class HelloView extends LinearLayout {
                 ViewGroup root = findViewById(R.id.root);
 
                 //Reset index if necessary
-                if (mIndex + 1 < util.Images.size()) {
+                if (mIndex + 1 >= util.Images.size()) {
                     mIndex = 0;
                 }
                 root.setBackground(getResources().getDrawable(Images.bg[++mIndex], null));
